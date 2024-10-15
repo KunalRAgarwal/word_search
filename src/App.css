@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  justify-content: center; /* Centers the grid and word list container */
+  align-items: flex-start; /* Aligns items at the top */
+  margin-top: 2%; /* Adjust as needed */
+}
+
+.App {
+  text-align: center;
+}
+
+.gridContainer {
+  display: flex;
+  flex-direction: column; /* Ensures rows are arranged vertically */
+  margin-right: 20px; /* Adds space between the grid and the word list */
+}
+
+.row {
+  display: flex; /* Makes each row a flex container to align cells horizontally */
+}
+
+.cell {
+  border: 1px solid #282c34;
+  margin: 2px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  line-height: 40px;
+  font-size: 18px;
+  box-sizing: border-box;
+  cursor: pointer;
+  user-select: none; /* Prevents highlighting of text while dragging */
+}
+
+.selected {
+  background-color: #ffa500; /* Highlight color for selected cells */
+  color: black; /* Ensures good contrast for selected cells */
+}
+
+.found {
+  background-color: #32cd32; /* Green background for found words */
+  color: black; /* Black text for better contrast against green */
+  font-weight: bold; /* Makes found words bold for emphasis * Adds line-through for found words */
+}
+
+.wordsshow {
+  margin: 5px 0;
+}
+
+.won-message {
+  margin-top: 20px;
+  color: #32cd32; /* Green color for the "You Won!" message */
+  font-weight: bold;
+  text-align: center;
+}
+
+.AppRight {
+  margin-left: 20px; /* Adjusted margin for better spacing between grid and word list */
+  text-align: left;
+  font-size: 18px;
+}
